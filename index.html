@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Örneği</title>
+  </head>
+  <body>
+
+
+    <h1>Form Örneği</h1>
+    <p>Css içermemektedir.</p>
+    <br>
+
+
+    <form>
+
+      <!--
+         Aşağıda p ve input elementlerinin iç içe tanımlanmasının tek sebebi bu elementlerinin
+         css kullanmadan yan yana gösterilmesini sağlamak. Normalde bu elementlerin birbirinden
+         bağımsız belirtilmesi daha doğru olur.
+      -->
+
+        <p>İsminiz: <input type="text" placeholder="..."> </p>
+
+        <p>Soyisminiz: <input type="text" placeholder="..."> </p>
+
+        <p>Yaşınız: <select>
+          <option>18</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+        </select> </p>
+
+
+        <!--
+          Radio tipindeki input elementlerinin özelliği belirtilen seçeneklerden sadece
+          bir tanesinin seçilmesidir. Aynı anda birden fazla seçeneği işaretleyemezsiniz.
+          Bu radio tipi elementlerde "name" olarak belirttiğimiz özellik radio inputlarını
+          gruplamak için kullanılır. Aynı "name"e sahip radio inputlarından aynı anda sadece
+          biri seçilebilir olacaktır.
+        -->
+        <p>Cinsiyetiniz:
+          <input name="gender" type="radio"> Erkek
+          <input name="gender" type="radio"> Kadın
+        </p>
+
+        <p>E-posta adresiniz:
+          <input type="email" placeholder="...">
+        </p>
+
+        <!-- İnput tipini password olarak alırsak yazılan karakterler gösterilmez. -->
+        <p>Şifreniz:
+          <input type="password">
+        </p>
+
+        <p>Üyesi olduğunuz komüte(ler):
+          <br>
+          <input type="checkbox" value="CS"> CS
+          <input type="checkbox" value="IAS"> IAS
+          <input type="checkbox" value="EMBS"> EMBS
+          <input type="checkbox" value="WE"> WE
+          <input type="checkbox" value="SosyalEtkinlik"> Sosyal Etkinlik
+          <br>
+          <input type="checkbox" value="TeknikGezi"> Teknik Gezi
+          <input type="checkbox" value="BYHI"> Basın Yayın ve Halkla İlişkiler
+          <br>
+          <input type="checkbox" value="Sponsorluk"> Sponsorluk ve Kurumsal İlişkiler
+          <input type="checkbox" value="ElifGizemAkkaya"> Elif Gizem Akkaya Projesi
+          <br>
+          <input type="checkbox" value="Sosyal Medya"> Sosyal Medya ve Tanıtım
+        </p>
+
+        <p>Profil Fotoğrafı: <input type="file"> </p>
+
+
+
+        <input type="submit" value="Üye ol!" onclick="alert('Başarılı!')">
+
+    </form>
+
+  </body>
+</html>
